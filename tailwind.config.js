@@ -8,7 +8,7 @@ export default {
     extend: {
       fontFamily: {
         'nano': ['nano', 'sans-serif'],
-        'inter': ['Bayon', 'sans-serif']
+        'inter': ['inter', 'sans-serif']
       },
     },
   },
