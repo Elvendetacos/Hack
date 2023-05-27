@@ -11,7 +11,6 @@
     background-position: center;
     width: 50%;
     height: 100%;
-
 }
 .form-box .form-title {
     font-family: 'Montserrat';
@@ -48,6 +47,10 @@ form .submit{
     background: linear-gradient(73.19deg, #DC79FF 0%, #256BFA 95.06%);
     width: 223px;
     height: 51px;
+}
+
+.backG{
+    background: url('../7-noise-texture-overlays-5.png'), #0A0A0D;
 }
 
 .backgroundColor{
