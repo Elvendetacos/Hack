@@ -22,7 +22,7 @@ export default function BodyLogin() {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(user)
-        navigate("/index")
+        navigate("/")
     }
 
 
@@ -39,7 +39,7 @@ export default function BodyLogin() {
                             <input className="input" onChange={handleChange} name="email" type="email" id="email" htmlFor="email" required></input>
                             <label htmlFor="password">Contraseña</label>
                             <input className="input" onChange={handleChange} name="password" type="password" id="password" htmlFor="password" required></input>
-                            <Link to={'/register'}>No tienes cuenta? registrate aqui</Link>
+                            <Link to={'/Resgiter'}>No tienes cuenta? registrate aqui</Link>
                             <input className="submit" type="submit" value="Login" id="btn-form-register" required/>
                         </form>
                     </div>

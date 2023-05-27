@@ -1,19 +1,17 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Register from './pages/Register'
-import Home from "./pages/home.jsx";
-import BodyLogin from "./pages/Login";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Register from './pages/register'
+import Home from "./pages/home";
+import BodyLogin from "./pages/login";
 
 function App() {
     return (
-        <Router>
-            <div className="App">
-                    <Routes>
-                        <Route exact path="/" element={<BodyLogin />} />
-                        <Route exact path="/register" element={<Register />} />
-                        <Route exact path="/index" element={<Home />} />
-                    </Routes>
-            </div>
-        </Router>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<BodyLogin/>}></Route>
+                <Route path="/Resgiter" element={<Register/>}></Route>
+                <Route path="/Home" element={<Home/>}></Route>
+            </Routes>
+        </BrowserRouter>
     );
 }
 
