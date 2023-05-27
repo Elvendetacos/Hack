@@ -1,8 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Home from './pages/home'
 import './index.css'
+import BodyLogin from "./pages/login";
+import Register from "./pages/register";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <Home />
+    <Register />
 )
