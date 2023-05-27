@@ -51,6 +51,7 @@ form .submit{
 
 .backG{
     background: url('../7-noise-texture-overlays-5.png'), #0A0A0D;
+    height: 1000px;
 }
 
 .backgroundColor{
@@ -59,4 +60,11 @@ form .submit{
     height: 100%;
     display: flex;
     position: absolute;
+}
+.nav {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 12px;
 }

@@ -2,12 +2,52 @@ import Background from "../components/background";
 import Person from "../components/person";
 import search from "../components/search";
 import Images from "../components/images";
+import Text from "../components/text.jsx";
+
+
+const publis = [
+    {'name': 'Axel',
+        'text': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+    },
+    {
+        'name': 'Conejo',
+        'text': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+
+    },
+    {
+        'name': 'Brian',
+        'text': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+
+    },
+    {
+        'name': 'Luis',
+        'text': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+
+    },
+    {
+        'name': 'Ali',
+        'text': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+
+    },
+    {
+        'name': 'Jhon',
+        'text': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+
+    },
+    {
+        'name': 'Adolfo',
+        'text': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+
+    }
+
+]
+
 
 function Home() {
     return ( 
         <>
         <Background>
-            <div className="col-span-8 h-[60px] mt-[31px] bg-gray-100 col-start-3 rounded-xl flex justify-between">
+            <div className="col-span-8 h-[60px] mt-[31px] bg-gray-100 col-start-3 rounded-xl flex justify-between, nav">
                 <div className="w-[30%] h-full flex justify-around items-center">
                     <p className="font-nano text-[32px]">UUPs!</p>
                     <p className="font-inter text-[20px]">profile</p>
@@ -34,14 +74,13 @@ function Home() {
                         </button>
                     </div>
                 </div>
-                <div className="w-[40%] h-full"></div>
+                <div className="w-[40%] h-full">
+                </div>
             </div>
-            <div className="col-span-6 mt-[31px] w-full h-auto pb-4 bg-transparent col-start-4">
-                <div className="w-full h-[70px] flex justify-center items-center">
-                    <p className="font-inter text-[30px] font-bold text-white text-center">TOPICS</p>
-                </div>
-                <div className="w-full h-auto">
-                </div>
+            <div className="col-span-6 mt-[31px] w-full h-[339px] col-start-4 rounded-xl flex-col ">
+                {publis.map((text, index) => (
+                    <Text key={index} text={text.text} name={text.name}></Text>
+                ))}
             </div>
         </Background>
         </>

@@ -1,4 +1,4 @@
-import Icon from '../assets/images/icon.svg'
+import Icon from '../assets/Hexagon.png'
 
 function Person() {
     return ( 
@@ -7,7 +7,7 @@ function Person() {
             <div className="w-full h-[50%] flex justify-left items-center">
                 <div className="w-[60%] flex justify-center items-center">
                     <div className="w-[30%] h-[50%] flex justify-center items-center">
-                        <img src={Icon} className='w-[70%] object-fill invert'/>
+                        <img src={Icon} className='w-[70%] object-fill'/>
                     </div>
                     <div className="w-[70%]">
                         <p className="font-inter text-[25px] text-white">Conejo Hiram Mendez</p>
