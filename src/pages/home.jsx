@@ -1,6 +1,7 @@
 import Background from "../components/background";
 import Person from "../components/person";
 import search from "../components/search";
+import Images from "../components/images";
 
 function Home() {
     return ( 
@@ -16,7 +17,7 @@ function Home() {
                 <div className="w-[10%] h-full">
                 </div>
             </div>
-            <div className="col-span-6 mt-[31px] w-full h-[246px] bg-[#0A0A0D] col-start-4 rounded-xl flex">
+            <div className="col-span-6 mt-[31px] w-full h-[246px] bg-transparent col-start-4 rounded-xl flex">
                 <Person></Person>
             </div>
             <div className="col-span-6 mt-[31px] w-full h-[339px] bg-gradient-to-l from-[#1E1C32] to-[#2B161D] col-start-4 rounded-xl flex">
@@ -34,6 +35,13 @@ function Home() {
                     </div>
                 </div>
                 <div className="w-[40%] h-full"></div>
+            </div>
+            <div className="col-span-6 mt-[31px] w-full h-auto pb-4 bg-transparent col-start-4">
+                <div className="w-full h-[70px] flex justify-center items-center">
+                    <p className="font-inter text-[30px] font-bold text-white text-center">TOPICS</p>
+                </div>
+                <div className="w-full h-auto">
+                </div>
             </div>
         </Background>
         </>

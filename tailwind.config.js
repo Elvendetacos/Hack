@@ -10,6 +10,9 @@ export default {
         'nano': ['nano', 'sans-serif'],
         'inter': ['inter', 'sans-serif']
       },
+      backgroundImage: {
+        'BG': "url('./styles/7-noise-texture-overlays-5.png')",
+      }
     },
   },
   plugins: [],
